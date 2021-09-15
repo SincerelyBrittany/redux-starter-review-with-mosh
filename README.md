@@ -2,15 +2,19 @@
 
 #Functional Programming 101
 
-//In Javascript functions are first class citizens
-//We can treat them like any other variables.
+// In Javascript functions are first class citizens
+// We can treat them like any other variables.
 
+```
 function sayHello() {
 return "hello world";
 }
+```
 
+```
 let fn = sayHello;
 fn();
+```
 
 function greet(fnMessage) {
 console.log(fnMessage);
