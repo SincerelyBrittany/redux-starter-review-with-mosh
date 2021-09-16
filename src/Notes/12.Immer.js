@@ -8,5 +8,6 @@ function publish(book) {
   });
   //book.isPublished = true;
 }
-let book = publish(book);
+let updated = publish(book);
 console.log(book);
+console.log(updated);
