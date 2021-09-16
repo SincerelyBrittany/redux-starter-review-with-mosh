@@ -2,10 +2,13 @@
 // The job of the reducer is to return the new state based on the action passed in.
 // EXAMPLE
 
+//import { ADD_BUG, REMOVE_BUG } from "./ActionTypes";
+import * as actions from "./ActionTypes";
+
 let lastId = 0;
 
 export default function reducer(state = [], action) {
-  if (action.type === "ADD_BUG")
+  if (action.type === actions.ADD_BUG)
     return [
       ...state,
       {
@@ -15,7 +18,7 @@ export default function reducer(state = [], action) {
         //For the id we need to have some kind of counter
       },
     ];
-  else if (action.type === "REMOVE_BUG")
+  else if (action.type === actions.REMOVE_BUG)
     return state.filter((bug) => bug.id !== action.payload.id);
 
   return state;
