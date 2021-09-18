@@ -1,7 +1,2 @@
-let action = {
-  type: "ADD_BUG",
-  payload: {
-    id: 1,
-    description: "...",
-  },
-};
+export const ADD_BUG = "ADD_BUG";
+export const REMOVE_BUG = "REMOVE_BUG";
