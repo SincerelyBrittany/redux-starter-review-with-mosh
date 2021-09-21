@@ -3,17 +3,17 @@ import * as actions from "./ActionTypes";
 export const ADD_BUG = (description) => ({
     type: actions.ADD_BUG,
     payload: {
-      description: "Bug1",
+      description: description,
     },
   });
 
 
-//   export const REMOVE_BUG = (description) => ({
-//     type: actions.ADD_BUG,
-//     payload: {
-//       description: "Bug1",
-//     },
-//   });
+  export const REMOVE_BUG = (description) => ({
+    type: actions.REMOVE_BUG,
+    payload: {
+      description
+    },
+  });
 
 
 export const RESOLVE_BUG = id => ({
