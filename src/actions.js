@@ -1,4 +1,4 @@
-import * as actions from "./ActionTypes";
+import * as actions from "./actionTypes";
 
 export const ADD_BUG = (description) => ({
     type: actions.ADD_BUG,
@@ -16,7 +16,7 @@ export const ADD_BUG = (description) => ({
   });
 
 
-export const RESOLVE_BUG = id => ({
-    type: actions.RESOLVE_BUG,
-    payload:  {id:id}
+export const RESOLVE_BUG = (id) => ({
+  type: actions.RESOLVE_BUG,
+  payload: { id: id },
 });
